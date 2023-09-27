@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+   <link rel="stylesheet" href="newCss.css">
+</head>
+<body>
+    <center class="cal-name">Calculator</center>
+    <div id="calculator">
+        <div id="result">0</div>
+        <div id="buttons">
+            
+            <button class="btn-blue" onclick="clearScreen()">AC</button>
+            <button class="btn-blue" onclick="clearLastDigit()">C</button>
+            
+            <button class="btn-blue" onclick="addToScreen('+')">+</button>
+            <button class="btn-blue" onclick="addToScreen('-')">-</button>
+
+
+            <button class="btn-white" onclick="addToScreen('7')">7</button>
+            <button class="btn-white" onclick="addToScreen('8')">8</button>
+            <button class="btn-white" onclick="addToScreen('9')">9</button>
+            <button class="btn-blue" onclick="addToScreen('*')">*</button>
+            <button class="btn-white" onclick="addToScreen('4')">4</button>
+
+            <button class="btn-white"onclick="addToScreen('5')">5</button>
+            <button class="btn-white" onclick="addToScreen('6')">6</button>
+
+            <button class="btn-blue" onclick="addToScreen('/')">/</button>
+            <button class="btn-white" onclick="addToScreen('1')">1</button>
+            <button class="btn-white" onclick="addToScreen('2')">2</button>
+            <button class="btn-white" onclick="addToScreen('3')">3</button> 
+            <button class="btn-blue" onclick="addToScreen('.')">.</button>
+            <button class="btn-white" onclick="addToScreen('0')">0</button>           
+            <button class="btn-Darkblue"onclick="calculateResult()">=</button>
+        </div>
+    </div>
+
+    <script src="newScript.js"> </script>
+</body>
+</html>
